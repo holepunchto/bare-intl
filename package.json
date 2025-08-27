@@ -1,0 +1,31 @@
+{
+  "name": "bare-intl",
+  "version": "0.0.1",
+  "description": "ECMAScript Internationalization API for Bare",
+  "exports": {
+    "./package": "./package.json",
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "prettier . --check && bare test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-intl.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-intl/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-intl#readme",
+  "devDependencies": {
+    "brittle": "^3.3.2",
+    "prettier": "^3.4.2",
+    "prettier-config-standard": "^7.0.0"
+  }
+}
