@@ -1,5 +1,9 @@
-global.IntlPolyfill = require('intl/lib/core')
+const Intl = require('intl/lib/core')
+
+global.IntlPolyfill = Intl
 
 require('intl/locale-data/jsonp/en')
 
-module.exports = IntlPolyfill
+delete global.IntlPolyfill
+
+module.exports = Intl
