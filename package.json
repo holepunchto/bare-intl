@@ -4,11 +4,12 @@
   "description": "ECMAScript Internationalization API for Bare",
   "exports": {
     "./package": "./package.json",
+    "./global": "./global.js",
     ".": "./index.js"
   },
   "files": [
     "index.js",
-    "lib"
+    "global.js"
   ],
   "scripts": {
     "test": "prettier . --check && bare test.js"
@@ -23,6 +24,9 @@
     "url": "https://github.com/holepunchto/bare-intl/issues"
   },
   "homepage": "https://github.com/holepunchto/bare-intl#readme",
+  "dependencies": {
+    "intl": "^1.2.5"
+  },
   "devDependencies": {
     "brittle": "^3.3.2",
     "prettier": "^3.4.2",

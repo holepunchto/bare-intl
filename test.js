@@ -1,1 +1,17 @@
-require('./test/date-time-format')
+const test = require('brittle')
+const Intl = require('.')
+
+test('basic', (t) => {
+  t.ok(Intl)
+  t.ok(Intl.getCanonicalLocales)
+  // t.ok(Intl.Collator)
+  t.ok(Intl.DateTimeFormat)
+  // t.ok(Intl.DisplayNames)
+  // t.ok(Intl.DurationFormat)
+  // t.ok(Intl.ListFormat)
+  // t.ok(Intl.Locale)
+  t.ok(Intl.NumberFormat)
+  // t.ok(Intl.PluralRules)
+  // t.ok(Intl.RelativeTimeFormat)
+  // t.ok(Intl.Segmenter)
+})
