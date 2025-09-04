@@ -1,6 +1,6 @@
 {
   "name": "bare-intl",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "ECMAScript Internationalization API for Bare",
   "exports": {
     "./package": "./package.json",
